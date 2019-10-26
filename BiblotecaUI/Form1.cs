@@ -12,8 +12,13 @@ using System.Windows.Forms;
 
 namespace BiblotecaUI
 {
+
     public partial class Form1 : Form
     {
+
+        Boolean authorsFormShown = false;
+        searchAuthorsForm authorsForm = null;
+
         private static string connectionString =
             "Server=localhost;Database=biblioteca;Uid=lector;";
         public Form1()
@@ -55,14 +60,20 @@ namespace BiblotecaUI
 
         }
 
-        private void booksListBox_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void authrosButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
-        }
+            if (!authorsFormShown)
+            {
+                authorsForm = new searchAuthorsForm();
+                authorsForm.Show();
+                authorsForm.Location = new Point(this.Location.X + this.Size.Width + 10, this.Location.Y);
+                authorsFormShown = true;
+            }
 
-        private void disponiblesButton_CheckedChanged(object sender, EventArgs e)
-        {
-
+            authorsForm.Show();
         }
     }
 

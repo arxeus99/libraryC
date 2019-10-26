@@ -19,3 +19,4 @@ A:\Desktop\Programacion\C#\Bibloteca\BiblotecaUI\bin\Debug\Renci.SshNet.xml
 A:\Desktop\Programacion\C#\Bibloteca\BiblotecaUI\obj\Debug\BiblotecaUI.csproj.CopyComplete
 A:\Desktop\Programacion\C#\Bibloteca\BiblotecaUI\bin\Debug\Google.Protobuf.pdb
 A:\Desktop\Programacion\C#\Bibloteca\BiblotecaUI\obj\Debug\BiblotecaUI.Form2.resources
+A:\Desktop\Programacion\C#\Bibloteca\BiblotecaUI\obj\Debug\BiblotecaUI.searchAuthorsForm.resources

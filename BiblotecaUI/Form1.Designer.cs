@@ -35,7 +35,7 @@
             this.findButton = new System.Windows.Forms.Button();
             this.booksListBox = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.reservarButton = new System.Windows.Forms.Button();
+            this.authrosButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -86,7 +86,6 @@
             this.booksListBox.Name = "booksListBox";
             this.booksListBox.Size = new System.Drawing.Size(712, 180);
             this.booksListBox.TabIndex = 4;
-            this.booksListBox.SelectedIndexChanged += new System.EventHandler(this.booksListBox_SelectedIndexChanged);
             this.booksListBox.DoubleClick += new System.EventHandler(this.booksListBox_DoubleClick);
             // 
             // label3
@@ -98,16 +97,17 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Books founds";
             // 
-            // reservarButton
+            // authrosButton
             // 
-            this.reservarButton.BackColor = System.Drawing.SystemColors.Desktop;
-            this.reservarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reservarButton.Location = new System.Drawing.Point(512, 382);
-            this.reservarButton.Name = "reservarButton";
-            this.reservarButton.Size = new System.Drawing.Size(232, 51);
-            this.reservarButton.TabIndex = 7;
-            this.reservarButton.Text = "Search Authors >>";
-            this.reservarButton.UseVisualStyleBackColor = false;
+            this.authrosButton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.authrosButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authrosButton.Location = new System.Drawing.Point(512, 382);
+            this.authrosButton.Name = "authrosButton";
+            this.authrosButton.Size = new System.Drawing.Size(232, 51);
+            this.authrosButton.TabIndex = 7;
+            this.authrosButton.Text = "Search Authors >>";
+            this.authrosButton.UseVisualStyleBackColor = false;
+            this.authrosButton.Click += new System.EventHandler(this.authrosButton_Click);
             // 
             // Form1
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.reservarButton);
+            this.Controls.Add(this.authrosButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.booksListBox);
             this.Controls.Add(this.findButton);
@@ -138,7 +138,7 @@
         private System.Windows.Forms.Button findButton;
         private System.Windows.Forms.ListBox booksListBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button reservarButton;
+        private System.Windows.Forms.Button authrosButton;
     }
 }
 
