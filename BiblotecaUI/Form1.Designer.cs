@@ -36,7 +36,6 @@
             this.booksListBox = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.reservarButton = new System.Windows.Forms.Button();
-            this.disponibleButton = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +63,7 @@
             // 
             this.bookTextBox.Location = new System.Drawing.Point(48, 148);
             this.bookTextBox.Name = "bookTextBox";
-            this.bookTextBox.Size = new System.Drawing.Size(279, 22);
+            this.bookTextBox.Size = new System.Drawing.Size(499, 22);
             this.bookTextBox.TabIndex = 2;
             // 
             // findButton
@@ -110,24 +109,12 @@
             this.reservarButton.Text = "Search Authors >>";
             this.reservarButton.UseVisualStyleBackColor = false;
             // 
-            // disponibleButton
-            // 
-            this.disponibleButton.AutoSize = true;
-            this.disponibleButton.Location = new System.Drawing.Point(350, 148);
-            this.disponibleButton.Name = "disponibleButton";
-            this.disponibleButton.Size = new System.Drawing.Size(221, 21);
-            this.disponibleButton.TabIndex = 8;
-            this.disponibleButton.Text = "Mostrar solo libros disponibles";
-            this.disponibleButton.UseVisualStyleBackColor = true;
-            this.disponibleButton.CheckedChanged += new System.EventHandler(this.disponiblesButton_CheckedChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.disponibleButton);
             this.Controls.Add(this.reservarButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.booksListBox);
@@ -152,7 +139,6 @@
         private System.Windows.Forms.ListBox booksListBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button reservarButton;
-        private System.Windows.Forms.CheckBox disponibleButton;
     }
 }
 

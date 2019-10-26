@@ -25,8 +25,8 @@ namespace BiblotecaUI
         {
             var books = new List<Book>();
             MySqlConnection connection = new MySqlConnection(connectionString);
-            string sql = "";
-            if (disponibleButton.Checked)
+            string sql = "SELECT id_llib, titol, disponible, descrip_llib, fk_departament FROM llibres" + $" WHERE titol LIKE '%{ bookTextBox.Text }%' ORDER BY id_llib";
+            /*if (disponibleButton.Checked)
             {
                 sql = "SELECT id_llib, titol, disponible, descrip_llib, fk_departament FROM llibres" + $" WHERE titol LIKE '%{ bookTextBox.Text }%'AND DISPONIBLE = 'DISPONIBLE' ORDER BY id_llib";
             }
@@ -34,7 +34,7 @@ namespace BiblotecaUI
             else
             {
                 sql = "SELECT id_llib, titol, disponible, descrip_llib, fk_departament FROM llibres" + $" WHERE titol LIKE '%{ bookTextBox.Text }%' ORDER BY id_llib";
-            }
+            }*/
             books = connection.Query<Book>(sql).ToList();
             /**foreach(var book in books)
             {
@@ -53,14 +53,6 @@ namespace BiblotecaUI
             Form2 bookDetailsForm = new Form2(selectedBook);
             DialogResult result = bookDetailsForm.ShowDialog(this);
 
-            if(result == DialogResult.OK)
-            {
-
-            }
-            else
-            {
-
-            }
         }
 
         private void booksListBox_SelectedIndexChanged(object sender, EventArgs e)
