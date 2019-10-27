@@ -42,7 +42,7 @@ namespace BiblotecaUI
             List<Autor> authors = new List<Autor>();
             MySqlConnection connection = new MySqlConnection(connectionString);
             string sql = $"SELECT ID_AUT, NOM_AUT FROM AUTORS" +
-                $" WHERE NOM_AUT LIKE '%{authorTextBox.Text}%'";
+                $" WHERE NOM_AUT LIKE '%{authorTextBox.Text}%' ORDER BY ID_AUT";
             authors = connection.Query<Autor>(sql).ToList();
             authorsListBox.DataSource = authors;
             authorsListBox.DisplayMember = "FullInfo";

@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.description = new System.Windows.Forms.Label();
             this.department = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.autoresList = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,15 +84,6 @@
             this.department.TabIndex = 4;
             this.department.Text = "label2";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(23, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(532, 72);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // autoresList
             // 
             this.autoresList.FormattingEnabled = true;
@@ -109,7 +99,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
             this.Controls.Add(this.autoresList);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.department);
             this.Controls.Add(this.description);
             this.Controls.Add(this.pictureBox1);
@@ -131,7 +120,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label description;
         private System.Windows.Forms.Label department;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox autoresList;
     }
 }
